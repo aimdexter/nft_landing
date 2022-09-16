@@ -19,8 +19,8 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   primary: true,
-  label: 'Button',
-  className: 'bg-red1',
+  label: 'Button primary',
+  className: '',
 };
 
 export const Secondary = Template.bind({});
