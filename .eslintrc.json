@@ -19,9 +19,7 @@
     }
   ],
   "rules": {
-    "no-unused-vars": [
-      1,
-      { "args": "after-used", "argsIgnorePattern": "^_", "react/react-in-jsx-scope": "off" }
-    ]
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
   }
 }
