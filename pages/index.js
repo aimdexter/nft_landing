@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/nft.png" />
       </Head>
 
-      <main className="">
+      <main className="bg-red-500">
       </main>
 
       <footer className="">
