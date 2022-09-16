@@ -20,6 +20,7 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  className: 'bg-red1',
 };
 
 export const Secondary = Template.bind({});
