@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import NavbarDesktop from '../components/NavbarDesktop';
 import NavbarMobile from '../components/NavbarMobile';
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
       </Head>
       <main className="h-screen">
       <NavbarMobile />
+      <NavbarDesktop />
       </main>
+      <div className="h-screen bg-red1"></div>
       <footer className="">
       </footer>
     </div>
