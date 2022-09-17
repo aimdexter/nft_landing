@@ -1,17 +1,17 @@
 import Head from 'next/head';
+import NavbarMobile from '../components/NavbarMobile';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-bg1 h-screen w-screen">
       <Head>
         <title>NFT Landing page</title>
         <meta name="description" content="NFT Landing page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="bg-red-500 w-screen h-screen">
+      <main className="h-screen">
+      <NavbarMobile />
       </main>
-
       <footer className="">
       </footer>
     </div>
