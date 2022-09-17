@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>NFT Landing page</title>
         <meta name="description" content="NFT Landing page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <main className="h-screen">
       <NavbarMobile />
