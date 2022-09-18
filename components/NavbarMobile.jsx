@@ -19,18 +19,32 @@ const NavbarMobile = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 lg:hidden flex items-center justify-between py-5 px-4 transition duration-500">
-        <div className="w-1/12 z-50">
-          <Image src="/images/logo.png" alt="Nft logo" width="53px" height="53px" />
+      <nav className="fixed w-screen bg-bg1 top-0 z-50 lg:hidden flex items-center justify-between px-4 transition duration-500">
+        <div className="z-50 flex justify-between w-screen py-2">
+          <div className="z-50 ">
+            <Image src="/images/logo.png" alt="Nft logo" width="53px" height="53px" />
+          </div>
+          <button className="z-10">
+            {showNav ? (
+              <IconContext.Provider value={{ className: 'text-2xl text-white' }}>
+                <AiOutlineClose onClick={() => setShowNav(!showNav)} />
+              </IconContext.Provider>
+            ) : (
+              <IconContext.Provider value={{ className: 'text-2xl text-white' }}>
+                <AiOutlineMenu onClick={() => setShowNav(!showNav)} />
+              </IconContext.Provider>
+            )}
+          </button>
         </div>
+
         <div
           onClick={() => setShowNav(!showNav)}
           className={`${showNav ? 'left-0 z-10' : 'transition-left -left-full'} 
-        fixed top-0 left-0 flex h-[-webkit-fill-available] flex-col items-center justify-center gap-5 mt-20 bg-bg1 w-full text-menu 
+        fixed top-0 left-0 flex h-[-webkit-fill-available] flex-col items-center justify-center gap-5 pt-20 bg-bg1 w-full text-menu 
         duration-500 px-10`}
         >
           <div className="border-b-[1px] w-full items-start flex flex-col gap-5 h-fit border-line pb-5">
-            <div className="flex px-5 py-2 rounded-full items-center gap-3 bg-gradient-to-bl from-[#EB001B] to-[#0042FF]">
+            <div className="flex px-5 py-2 rounded-xl items-center gap-3 bg-gradient-to-bl from-[#EB001B] to-[#0042FF]">
               <AiOutlineHome />
               <div href="/#home" className="">
                 Dahboard
@@ -102,17 +116,6 @@ const NavbarMobile = () => {
             </div>
           </div>
         </div>
-        <button className="z-10">
-          {showNav ? (
-            <IconContext.Provider value={{ className: 'text-2xl text-white' }}>
-              <AiOutlineClose onClick={() => setShowNav(!showNav)} />
-            </IconContext.Provider>
-          ) : (
-            <IconContext.Provider value={{ className: 'text-2xl text-white' }}>
-              <AiOutlineMenu onClick={() => setShowNav(!showNav)} />
-            </IconContext.Provider>
-          )}
-        </button>
       </nav>
     </>
   );

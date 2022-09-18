@@ -8,14 +8,14 @@ import { TbCurrencyDogecoin, TbCurrencyEthereum } from 'react-icons/tb';
 
 const NavbarDesktop = () => {
   return (
-    <nav className="hidden fixed top-0 left-0 bg-red1 h-screen lg:flex flex-col">
-      <div className="z-50 bg-white w-full">
+    <nav className="hidden fixed top-0 left-0 h-full w-fit border-r-[1px] border-line2 lg:flex flex-col bg-bg1">
+      <div className="z-50 w-full pt-2 px-2 ">
         <Image src="/images/logo.png" alt="Nft logo" width="53px" height="53px" />
       </div>
 
-      <div className="flex flex-col h-screen bg-bg1 w-fit text-menu duration-500 justify-center">
-        <div className="border-b-[1px] items-start flex flex-col border-line ">
-          <div className="flex px-5 py-2 rounded-full items-center gap-3 bg-gradient-to-bl from-[#EB001B] to-[#0042FF]">
+      <div className="flex flex-col px-2 text-menu duration-500 h-full">
+        <div className="border-b-[1px] items-start flex flex-col border-line flex-1 justify-around">
+          <div className="flex px-5 py-2 rounded-xl items-center gap-3 bg-gradient-to-bl from-[#EB001B] to-[#0042FF]">
             <AiOutlineHome />
             <div href="/#home" className="">
               Dahboard
@@ -40,7 +40,7 @@ const NavbarDesktop = () => {
             </div>
           </div>
         </div>
-        <div className="border-b-[1px] items-start flex flex-col border-line px-4">
+        <div className="border-b-[1px] items-start flex flex-col border-line px-4 flex-1 justify-around">
           <div className="flex  items-center gap-3">
             <AiOutlineWallet />
             <div href="/#home" className="">
@@ -66,17 +66,17 @@ const NavbarDesktop = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full flex flex-col px-4">
+        <div className="flex flex-col px-4 flex-1 justify-around">
           <div className="flex  items-center gap-3">
             <FiSettings />
             <div href="/#home" className="">
               Settings
             </div>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex  items-center gap-3">
             <FiHelpCircle />
             <div href="/#home" className="">
-              Helps & FAQ
+              Help & FAQ
             </div>
           </div>
           <div className="flex items-center gap-3">

@@ -4,7 +4,7 @@ import NavbarMobile from '../components/NavbarMobile';
 
 export default function Home() {
   return (
-    <div className="bg-bg1 h-screen w-screen">
+    <div className="bg-bg1 h-screen">
       <Head>
         <title>NFT Landing page</title>
         <meta name="description" content="NFT Landing page" />

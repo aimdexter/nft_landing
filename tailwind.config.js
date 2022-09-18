@@ -16,6 +16,7 @@ module.exports = {
         'green1': '#34D178',
         'bg1' : '#131313',
         'line' : '#B3B3B3',
+        'line2' : '#2C2D33',
         'menu' : '#A2A3A4',
       },
     },
