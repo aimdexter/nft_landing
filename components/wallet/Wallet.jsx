@@ -1,6 +1,7 @@
 import { AiFillSignal } from 'react-icons/ai';
 import { IoIosArrowDown } from 'react-icons/io';
 import { SiEthereum } from 'react-icons/si';
+import ChartCrypto from './Charts';
 
 const Wallet = () => {
   return (
@@ -47,7 +48,9 @@ const Wallet = () => {
               2.013 <span className="text-base text-white">ETH</span>
             </div>
           </div>
-          <div className="graphs"></div>
+          <div className="graphs">
+            <ChartCrypto />
+          </div>
         </div>
       </div>
     </div>

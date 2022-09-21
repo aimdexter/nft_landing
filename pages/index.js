@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import NavbarDesktop from '../components/NavbarDesktop';
 import NavbarMobile from '../components/NavbarMobile';
-import Wallet from '../components/Wallet';
+import Wallet from '../components/wallet/Wallet';
 
 export default function Home() {
   return (
