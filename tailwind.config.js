@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'saira': ['Saira', 'sans-serif'],
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

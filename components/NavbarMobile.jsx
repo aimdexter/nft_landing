@@ -117,6 +117,9 @@ const NavbarMobile = () => {
           </div>
         </div>
       </nav>
+
+      {/* This is div is for making content goes after the menu */}
+      <div className="bg-red-500 h-[75px] lg:hidden"></div>
     </>
   );
 };

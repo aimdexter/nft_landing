@@ -1,20 +1,23 @@
 import Head from 'next/head';
 import NavbarDesktop from '../components/NavbarDesktop';
 import NavbarMobile from '../components/NavbarMobile';
+import Wallet from '../components/Wallet';
 
 export default function Home() {
   return (
-    <div className="bg-bg1 h-screen">
+    <div className="bg-bg1 font-saira">
       <Head>
         <title>NFT Landing page</title>
         <meta name="description" content="NFT Landing page" />
         <link rel="icon" href="/images/logo.png" />
       </Head>
-      <main className="h-screen">
+      <main className="lg:flex">
       <NavbarMobile />
       <NavbarDesktop />
+      <div className="">
+        <Wallet />
+      </div>
       </main>
-      <div className="h-screen bg-red1"></div>
       <footer className="">
       </footer>
     </div>
