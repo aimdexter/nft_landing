@@ -22,7 +22,13 @@ const NavbarMobile = () => {
       <nav className="fixed w-screen bg-bg1 top-0 z-50 lg:hidden flex items-center justify-between px-4 transition duration-500">
         <div className="z-50 flex justify-between w-screen py-2">
           <div className="z-50 ">
-            <Image src="/images/logo.png" alt="Nft logo" width="53px" height="53px" />
+            <Image
+              loading="lazy"
+              src="/images/logo.png"
+              alt="Nft logo"
+              width="53px"
+              height="53px"
+            />
           </div>
           <button className="z-10">
             {showNav ? (
