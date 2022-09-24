@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import NavbarDesktop from '../components/NavbarDesktop';
 import NavbarMobile from '../components/NavbarMobile';
+import RecentTransactions from '../components/transactions/RecentTransactions';
 import Wallet from '../components/wallet/Wallet';
 
 export default function Home() {
@@ -14,8 +15,9 @@ export default function Home() {
       <main className="lg:flex">
       <NavbarMobile />
       <NavbarDesktop />
-      <div className="">
+      <div className="m-2 border-[1px] border-line">
         <Wallet />
+        <RecentTransactions />
       </div>
       </main>
       <footer className="">

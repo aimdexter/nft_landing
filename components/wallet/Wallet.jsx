@@ -5,7 +5,7 @@ import ChartCrypto from './Charts';
 
 const Wallet = () => {
   return (
-    <div className="text-white font-semibold px-4 text-3xl flex flex-col gap-5">
+    <div className="text-white font-semibold px-4 pt-8 text-3xl flex flex-col gap-5">
       <h1 className="">My Wallet</h1>
       <div className="font-normal text-base bg-gradient-to-bl from-[#EB001B] to-[#0042FF] rounded-xl p-[2px]">
         <div className="text-center flex flex-col gap-5 bg-bg1 rounded-xl p-2">

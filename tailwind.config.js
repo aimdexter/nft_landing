@@ -20,6 +20,8 @@ module.exports = {
         'bg1' : '#131313',
         'line' : '#B3B3B3',
         'line2' : '#2C2D33',
+        'iconbg' : '#4A4F5B',
+        'gold1' : '#F7931A',
         'menu' : '#A2A3A4',
       },
     },

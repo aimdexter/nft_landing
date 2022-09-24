@@ -46,5 +46,8 @@
   },
   "resolutions": {
     "webpack": "^5"
+  },
+  "rules": {
+    "no-unused-vars": "off"
   }
 }
