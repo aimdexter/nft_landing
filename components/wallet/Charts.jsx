@@ -58,9 +58,13 @@ export const spending = {
 const ChartCrypto = () => {
   return (
     <>
-      <div className="flex w-1/2">
-        <Line options={options} data={earning} />
-        <Line options={options} data={spending} />
+      <div className="flex justify-around">
+        <div className="w-[110px]">
+          <Line options={options} data={earning} />
+        </div>
+        <div className="w-[110px]">
+          <Line options={options} data={spending} />
+        </div>
       </div>
     </>
   );
