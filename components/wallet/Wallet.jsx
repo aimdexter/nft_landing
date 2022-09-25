@@ -26,7 +26,7 @@ const Wallet = () => {
               <IoIosArrowDown />
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-around">
             <div className="flex items-center gap-2 text-gray1 ">
               <div className="bg-green-900 text-3xl p-2 rounded-full text-green1 font-medium bg-opacity-75">
                 <AiFillSignal />

@@ -16,7 +16,7 @@ export default function Home() {
       <main className="lg:flex">
       <NavbarMobile />
       <NavbarDesktop />
-      <div className="m-2 border-[1px] border-line">
+      <div className="m-2">
         <Wallet />
         <RecentTransactions />
         <CardSlider />
