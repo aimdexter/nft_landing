@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import CardSlider from '../components/cards/CardSlider';
 import NavbarDesktop from '../components/NavbarDesktop';
 import NavbarMobile from '../components/NavbarMobile';
 import RecentTransactions from '../components/transactions/RecentTransactions';
@@ -18,6 +19,7 @@ export default function Home() {
       <div className="m-2 border-[1px] border-line">
         <Wallet />
         <RecentTransactions />
+        <CardSlider />
       </div>
       </main>
       <footer className="">

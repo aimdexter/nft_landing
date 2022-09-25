@@ -47,7 +47,7 @@ const RecentTransactions = () => {
             return (
               <div
                 key={id}
-                className="flex justify-between w-full border-b-2 border-line items-center"
+                className="flex justify-between w-full last:border-b-0 border-b-2 border-line items-center"
               >
                 <div className="flex items-center py-4 gap-2">
                   <IconContext.Provider value={{ size: '40px' }}>
