@@ -9,7 +9,7 @@ import { TbCurrencyDogecoin, TbCurrencyEthereum } from 'react-icons/tb';
 const NavbarDesktop = () => {
   return (
     <>
-      <nav className="hidden fixed top-0 left-0 h-full w-fit border-r-[1px] border-line2 lg:flex flex-col bg-bg1">
+      <nav className="hidden fixed top-0 z-50 left-0 h-full w-fit border-r-[1px] border-line2 lg:flex flex-col bg-bg1">
         <div className="z-50 w-full pt-2 px-2 ">
           <Image src="/images/logo.png" alt="Nft logo" width="53px" height="53px" />
         </div>

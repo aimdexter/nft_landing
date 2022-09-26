@@ -18,15 +18,15 @@ export default function Home() {
       <main className="lg:flex">
         <NavbarMobile />
         <NavbarDesktop />
-        <div className="m-2 lg:w-full">
+        <div className="lg:w-full">
           <UserMenu />
-          <div className="lg:flex lg:justify-between">
+          <div className="lg:flex lg:justify-between lg:pl-2">
             <TopAuction />
             <div className="lg:flex-1">
               <Wallet />
             </div>
           </div>
-          <div className="lg:flex lg:flex-row-reverse">
+          <div className="lg:flex lg:flex-row-reverse lg:pl-2">
             <div className="lg:flex-1">
               <RecentTransactions />
             </div>

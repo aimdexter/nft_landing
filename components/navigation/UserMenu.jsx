@@ -4,7 +4,7 @@ import { TbBellRinging } from 'react-icons/tb';
 
 const UserMenu = () => {
   return (
-    <div className="hidden px-4 border-b-[1px] border-line2 py-4 lg:flex justify-between gap-5 w-full">
+    <div className="hidden sticky top-0 bg-bg1 z-40 px-5 border-b-[1px] border-line2 py-4 lg:flex justify-between gap-5 w-full">
       <div className="">
         <input
           type="search"
