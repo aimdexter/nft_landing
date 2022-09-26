@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         'saira': ['Saira', 'sans-serif'],
       },
+      backgroundImage: {
+        'auction': "url('/images/topauctionbg.png')",
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -21,7 +24,7 @@ module.exports = {
         'line' : '#B3B3B3',
         'line2' : '#2C2D33',
         'iconbg' : '#4A4F5B',
-        'gold1' : '#F7931A',
+        'gold' : '#F7931A',
         'menu' : '#A2A3A4',
       },
     },

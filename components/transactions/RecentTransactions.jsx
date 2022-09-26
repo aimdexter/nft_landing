@@ -11,7 +11,7 @@ const RecentTransactions = () => {
       price: '0.15 BTC',
       usd: '$16.533.10',
       fees: '- $60',
-      color: 'gold1',
+      color: 'text-gold',
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const RecentTransactions = () => {
       price: '0.33 BTC',
       usd: '$33.511.10',
       fees: '- $1260',
-      color: 'white',
+      color: 'text-white',
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const RecentTransactions = () => {
       price: '0,55 BTC',
       usd: '$21.533.10',
       fees: '- $2360',
-      color: 'white',
+      color: 'text-white',
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ const RecentTransactions = () => {
       price: '0.15 BTC',
       usd: '$16.533.10',
       fees: '- $60',
-      color: 'gold1',
+      color: 'text-gold',
     },
   ];
   return (
@@ -51,7 +51,7 @@ const RecentTransactions = () => {
               >
                 <div className="flex items-center py-4 gap-2">
                   <IconContext.Provider value={{ size: '40px' }}>
-                    <div className={`bg-iconbg rounded-full p-1 text-` + color}>{icon}</div>
+                    <div className={`bg-iconbg rounded-full p-1 ` + color}>{icon}</div>
                   </IconContext.Provider>
                   <div className="">
                     <h1 className="">{price}</h1>
