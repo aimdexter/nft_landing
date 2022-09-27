@@ -1,3 +1,4 @@
+import { AiOutlineLogin, AiOutlineLogout } from 'react-icons/ai';
 import { BiUserCircle } from 'react-icons/bi';
 import { RiWechatLine } from 'react-icons/ri';
 import { TbBellRinging } from 'react-icons/tb';
@@ -18,6 +19,14 @@ const UserMenu = () => {
         <BiUserCircle />
         <TbBellRinging />
         <RiWechatLine />
+        <buton className="flex flex-row-reverse gap-2 items-center">
+          <AiOutlineLogin />
+          <h1 className="text-sm">Login</h1>
+        </buton>
+        <buton className="flex flex-row gap-2 items-center">
+          <AiOutlineLogout />
+          <h1 className="text-sm">Logout</h1>
+        </buton>
       </div>
     </div>
   );
