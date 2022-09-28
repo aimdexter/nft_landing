@@ -1,4 +1,4 @@
-import { signOut, useSession, signIn } from 'next-auth/react';
+import { signIn, signOut, useSession } from 'next-auth/react';
 import { AiOutlineLogin, AiOutlineLogout } from 'react-icons/ai';
 import { BiUserCircle } from 'react-icons/bi';
 import { RiWechatLine } from 'react-icons/ri';
@@ -18,26 +18,31 @@ const UserMenu = () => {
         />
       </div>
       <div className="text-3xl flex flex-row-reverse gap-5 text-gray1">
-        <div className="flex items-center gap-2 flex-col">
-          <BiUserCircle />
-          <h1 className="text-sm">Signed in as</h1>
-        </div>
-        <div className="flex items-center gap-2 flex-col">
-          <TbBellRinging />
-          <h1 className="text-sm">100</h1>
-        </div>
-        <div className="flex items-center gap-2 flex-col">
-          <RiWechatLine />
-          <h1 className="text-sm">15</h1>
-        </div>
-        <buton onClick={() => signOut()} className="flex flex-col gap-2 items-center">
-          <AiOutlineLogout />
-          <h1 className="text-sm">Logout</h1>
-        </buton>
-        <buton onClick={() => signIn()} className="flex flex-col gap-2 items-center">
-          <AiOutlineLogin />
-          <h1 className="text-sm">Login</h1>
-        </buton>
+        {!session ? (
+          <buton onClick={() => signIn()} className="flex flex-col gap-2 items-center">
+            <AiOutlineLogin />
+            <h1 className="text-sm">Login</h1>
+          </buton>
+        ) : (
+          <>
+            <div className="flex items-center gap-2 flex-col">
+              <BiUserCircle />
+              <h1 className="text-sm">{session.user.name}</h1>
+            </div>
+            <div className="flex items-center gap-2 flex-col">
+              <TbBellRinging />
+              <h1 className="text-sm">100</h1>
+            </div>
+            <div className="flex items-center gap-2 flex-col">
+              <RiWechatLine />
+              <h1 className="text-sm">15</h1>
+            </div>
+            <buton onClick={() => signOut()} className="flex flex-col gap-2 items-center">
+              <AiOutlineLogout />
+              <h1 className="text-sm">Logout</h1>
+            </buton>
+          </>
+        )}
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { signIn, signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import { useState } from 'react';
 import { IconContext } from 'react-icons';
@@ -5,6 +6,8 @@ import {
   AiOutlineClose,
   AiOutlineHome,
   AiOutlineInbox,
+  AiOutlineLogin,
+  AiOutlineLogout,
   AiOutlineMenu,
   AiOutlineWallet,
 } from 'react-icons/ai';
@@ -16,12 +19,13 @@ import { TbCurrencyDogecoin, TbCurrencyEthereum } from 'react-icons/tb';
 
 const NavbarMobile = () => {
   const [showNav, setShowNav] = useState(false);
+  const { data: session } = useSession();
 
   return (
     <>
       <nav className="fixed w-screen bg-bg1 top-0 z-50 lg:hidden flex items-center justify-between px-4 transition duration-500">
         <div className="z-50 flex justify-between w-screen py-2">
-          <div className="z-50 ">
+          <div className="z-50 flex items-center ">
             <Image
               loading="lazy"
               src="/images/logo.png"
@@ -29,6 +33,11 @@ const NavbarMobile = () => {
               width="53px"
               height="53px"
             />
+            {session ? (
+              <h1 className="text-gray1 font-bold">Hi {session.user.name}</h1>
+            ) : (
+              <h1 className="text-gray1 font-bold"></h1>
+            )}
           </div>
           <button className="z-10">
             {showNav ? (
@@ -56,6 +65,21 @@ const NavbarMobile = () => {
                 Dahboard
               </div>
             </div>
+            {!session ? (
+              <button onClick={() => signIn()} className="flex w-40 px-5 items-center gap-3">
+                <AiOutlineLogin />
+                <div href="/#home" className="">
+                  Login
+                </div>
+              </button>
+            ) : (
+              <button onClick={() => signOut()} className="flex w-40 px-5 items-center gap-3">
+                <AiOutlineLogout />
+                <div href="/#home" className="">
+                  Logout
+                </div>
+              </button>
+            )}
             <div className="flex w-40 px-5 items-center gap-3">
               <RiAuctionLine />
               <div href="/#home" className="">
@@ -125,7 +149,7 @@ const NavbarMobile = () => {
       </nav>
 
       {/* This is div is for making content goes after the menu */}
-      <div className="bg-red-500 h-[75px] lg:hidden"></div>
+      <div className="h-[75px] lg:hidden"></div>
     </>
   );
 };
