@@ -24,7 +24,7 @@ const NavbarMobile = () => {
   return (
     <>
       <nav className="fixed w-screen bg-bg1 top-0 z-50 lg:hidden flex items-center justify-between px-4 transition duration-500">
-        <div className="z-50 flex justify-between w-screen py-2">
+        <div className="z-50 flex justify-between  w-screen py-2">
           <div className="z-50 flex items-center ">
             <Image
               loading="lazy"
