@@ -15,7 +15,7 @@
     "chart.js": "^3.9.1",
     "keen-slider": "^6.8.2",
     "next": "12.3.0",
-    "next-auth": "^4.12.0",
+    "next-auth": "^4.20.1",
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-chartjs-2": "^4.3.1",
